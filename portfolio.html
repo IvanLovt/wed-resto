@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Standart</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Montserrat:wght@100;400&family=Oxygen&family=Prompt:ital,wght@0,500;1,500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="/index.html"><img src="./img/Logo.jpg" alt=""></a>
+            <nav id='menu'>
+                <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+                <ul>
+                    <li class="header_link"><a href='/index.html'>Home</a></li>
+                    <li class="header_link"><a href='/about.html'>About</a></li>
+                    <li class="header_link"><a class='dropdown-arrow' href='/our_teAM.html'>Pages</a>
+                    <ul class='sub-menus'>
+                        <li class="header_link"><a href='/qwer.html'>Quality Standard</a></li>
+                        <li class="header_link"><a href='/BLACK.html'>Black Raspberry</a></li>
+                    </ul>
+                    </li>
+                    <li class="header_link"><a class='dropdown-arrow' href='/shop.html'>Shop</a>
+                    <ul class='sub-menus'>
+                        <li class="header_link"><a href='/singl_shop.html'>Shope Single</a></li>
+                    </ul>
+                    </li>
+                    <li class="header_link"><a href='/portfolio.html'>Project</a></li>
+                    <li class="header_link"><a href='#'>News</a></li>
+                </ul>
+            </nav>
+            <div class="search">
+                <form action="">
+                    <input class="" type="text">
+                    <button type="submit"> <img width="10" src="./img/Search Icon.png" alt=""></button>
+                </form>
+            </div>
+            <div class="cart">
+                <img width="20" class="Icon_cart" src="./img/Cart Icon.png" alt="">
+                <label for="">Cart</label>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="pamel_singl2">
+            <img src="./img/Image_porfolio.png" alt="">
+            <h1 class="tit_panel">Portfolio Standard</h1>
+        </div>
+        <div class="panel_orig">
+            <div class="item_ori">
+                <img class="photo_item" src="./img/orig.png" alt="">
+                <h4>Green & Tasty Lemon</h4>
+                <p class="tit_lit" style="color: darkgreen;">Fruits</p>
+            </div>
+            <div class="item_ori">
+                <img class="photo_item" src="./img/orig2.png" alt="">
+                <h4>Organic Carrot</h4>
+                <p class="tit_lit" style="color: darkgreen;">Fruits</p>
+            </div>
+            <div class="item_ori">
+                <img src="./img/orig3.png" alt="">
+                <h4>Organic Betel Leaf</h4>
+                <p class="tit_lit" style="color: darkgreen;">Leaf</p>
+            </div>
+            <div class="item_ori">
+                <img  src="./img/orig4.png" alt="">
+                <h4>Natural Tommato</h4>
+                <p class="tit_lit" style="color: darkgreen;">Fruits</p>
+            </div>
+            <div class="item_ori">
+                <img style="border-radius: 30px;" src="./img/orig5.png" alt="">
+                <h4>Black Raspberry</h4>
+                <p class="tit_lit" style="color: darkgreen;">Fruits</p>
+            </div>
+            <div class="item_ori">
+                <img src="./img/orig.png" alt="">
+                <h4>Honey Orange</h4>
+                <p class="tit_lit" style="color: darkgreen;">Fruits</p>
+            </div>
+        </div>
+        <div class="panel_backvisit">
+            <div class="vizit">
+                <img src="./img/vizit.png" alt="">
+                <div class="vizit_title">
+                    <h3>Subscribe to <br> our Newsletter</h3>
+                    <form class="input_box" action="">
+                        <input type="text" name="" id="" spellcheck="true">
+                        <img width="150" src="./img/subs.png" alt="">
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="up_footer">
+            <div class="nav_menu_footer">
+                <div class="lists">
+                    <ul>
+                        <label class="glob"> <b>Contact Us</b></label>
+                        <li>Email <br>needhelp@Organia.com </li>
+                        <li>Phone <br> 666 888 888 </li>
+                        <li>Address <br> 88 road, borklyn street, USA</li>
+                    </ul>
+                    <ul>
+                        <a href="/Index.html"><img src="./img/Logo.jpg" alt=""></a>
+                        <li> <label> Simply dummy text of the printing and typesetting industry. <br>Lorem Ipsum simply dummy text of the printing</label> </li>
+                    </ul>
+                    <ul>
+                        <label class="glob"> <b>Utility Pages</b></label>
+                        <li>Style Guide</li>
+                        <li>404 Not Found</li>
+                        <li>Password Protected</li>
+                      
+                    </ul>
+               
+                </div>
+            </div>
+        </div>
+        <div class="down_footer">
+            <div class="my_cont">
+                <a href="https://github.com/IvanLovt "><div class="glitch" data-text="@studiolovt |  2023 |  заказать сайт в лс канала">@studiolovt |  2023 |  заказать сайт в лс канала</div></a>
+             </div>
+        </div>
+    </footer>
+    <script>
+        function updatemenu() {
+            if (document.getElementById('responsive-menu').checked == true) {
+              document.getElementById('menu').style.borderBottomRightRadius = '0';
+              document.getElementById('menu').style.borderBottomLeftRadius = '0';
+            }else{
+              document.getElementById('menu').style.borderRadius = '0px';
+            }
+          }
+    </script>
+</body>
+</html>
